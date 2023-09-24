@@ -1,0 +1,7 @@
+name: File2Media
+type: module
+description: Provides migrations to create core Media entities from existing Drupal-managed files. Useful after migrating from Wordpress.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - migrate_drupal_d8

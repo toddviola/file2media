@@ -1,0 +1,18 @@
+# Migration for image media
+id: viola_media_document
+label: 'Document media migration'
+source:
+  plugin: d8_file_document
+  key: default
+destination:
+  plugin: entity:media
+  default_bundle: document
+process:
+  name: filename
+  status: status
+  created: created
+  changed: changed
+  uid: 
+    plugin: default_value
+    default_value: 1
+  field_media_file/target_id: fid
